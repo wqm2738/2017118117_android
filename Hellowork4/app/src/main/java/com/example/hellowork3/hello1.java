@@ -19,8 +19,6 @@ public class hello1 extends AppCompatActivity {
         Button button1=(Button) findViewById(R.id.button1);
         Button button4=(Button) findViewById(R.id.button4);
         Button button6=(Button) findViewById(R.id.button6);
-        Button button7=(Button) findViewById(R.id.button7);
-        Button button8=(Button) findViewById(R.id.button8);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,22 +43,6 @@ public class hello1 extends AppCompatActivity {
                 intent.setData(Uri.parse("google.navigation:q=\"+ll.latitude+\",\"+ll.longitude"));
                 startActivity(intent);
                 // Toast.makeText(hello1.this,"你点了hello3",Toast.LENGTH_SHORT).show();
-            }
-        });
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(hello1.this,hello2.class);
-                startActivity(intent);
-                Toast.makeText(hello1.this,"你点了hello2按钮.",Toast.LENGTH_SHORT).show();
-            }
-        });
-        button8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(hello1.this,hello3.class);
-                startActivity(intent);
-                Toast.makeText(hello1.this,"你点了hello3按钮.",Toast.LENGTH_SHORT).show();
             }
         });
 
